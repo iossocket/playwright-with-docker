@@ -1,7 +1,4 @@
-# Get the base image of Node version 16
-FROM node:16
-
-# Get the latest version of Playwright
+# Use the official Playwright image as base
 FROM mcr.microsoft.com/playwright:focal
  
 # Set the work directory for the application

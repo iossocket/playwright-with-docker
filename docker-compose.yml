@@ -1,0 +1,11 @@
+services:
+  starknet-devnet:
+    image: shardlabs/starknet-devnet-rs:latest
+    command: --seed 0 --account-class cairo1
+    ports:
+      - "5050:5050"
+
+  playwright:
+    build:
+      dockerfile: Dockerfile
+    command: tail -f /dev/null
